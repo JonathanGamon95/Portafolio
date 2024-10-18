@@ -1,0 +1,347 @@
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    body {
+        background: orange;
+    }
+
+
+    /* HEADER */
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        margin: auto;
+    }
+
+    header button {
+        width: 50px;
+        aspect-ratio: 1;
+        margin: auto 10px auto auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    header button i {
+        font-size: 30px;
+        color: aliceblue;
+    }
+
+
+
+
+
+    /* TITULOS y subtitulos*/
+    #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil H1,
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales h1,
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies h1,
+    #HABILIDADES h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .habilidades_1 h2,
+    .habilidades_2 h2 {
+        text-align: center;
+    }
+    /* TITULOS y subtitulos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* INCIO */
+    #INICIO {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../IMAGENES/IMAGEN_DE_FONDO/photo-1607799279861-4dd421887fb3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #INICIO main {
+        width: 375px;
+        height: 575px;
+
+        padding: 10px 0;
+    }
+
+    #INICIO main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    /* cont y imagen de perfil */
+    #INICIO main .cont_imagen_perfil {
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        border: 10px solid #93D2F3;
+        border-radius: 50%;
+        margin: 40px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #INICIO main .cont_imagen_perfil img {
+        width: auto;
+        height: 100%;
+    }
+
+
+
+    /* subtitulo de perfil */
+    #INICIO main h1 {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+
+        font-size: 30px;
+    }
+
+    #INICIO main h3 {
+        grid-column: 1 / -1;
+        grid-row: 7 / 8;
+    }
+
+    #INICIO main h1 {
+        margin: auto;
+    }
+
+    #INICIO main h3 {
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+    /* enlaces perfil */
+    #INICIO main ul {
+        grid-column: 1 / -1;
+        grid-row: 8 / -1;
+
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #INICIO main ul li {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #93D2F3;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #INICIO main ul li i {
+        font-size: 30px;
+        color: #93D2F3;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* SOBRE MI */
+
+    #SOBRE_MI {
+        width: 100vw;
+        height: auto;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi {
+        width: 100%;
+        height: 100%;
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 100px;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 100px;
+    }
+
+
+    /*datos personales*/
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales ul {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+
+        font-size: 25px;
+        list-style: none;
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales li {
+        margin-left: 40px;
+    }
+
+
+
+    /*Mis Hobbies*/
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies {
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies .hobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        margin: 100px;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies .hobbies li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 60px;
+        aspect-ratio: 1 / 1;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* HABILIDADES */
+    #HABILIDADES {
+        width: 100vw;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    #HABILIDADES .cont_estadisticas {
+        display: grid;
+        gap: 20px;
+    }
+
+
+
+
+    /* BARA DE PROGRESO */
+    .habilidades_1,
+    .habilidades_2 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .contenedor_barra {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(17, 17, 17);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .porcentaje {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .habilidad {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .barra_progreso {
+        width: 0%;
+        height: 100%;
+        background-color: aqua;
+        z-index: 0;
+        transition: 1.0s ease;
+    }
+}

@@ -1,0 +1,753 @@
+@media (min-width: 1199.98px) {
+    /* body {
+        background: red;
+    } */
+
+    /*desabilitacion de elementos mobile*/
+    header button {
+        display: none;
+    }
+
+
+
+
+    /*tamaño que ocupa las capas contenedoras*/
+    #INICIO {
+        /* width: 100vw; */
+        height: 100vh;
+    }
+
+    #SOBRE_MI,
+    #HABILIDADES,
+    #CONTACTO {
+        /* width: 100vw; */
+        height: 90vh;
+    }
+
+
+
+
+
+
+
+
+    /* HEADER */
+    header {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+
+    header h1 {
+        margin: auto;
+    }
+
+
+
+    header nav {
+        grid-column: 3 / -1;
+        margin: auto 50px auto auto;
+    }
+
+
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .menu_navegacion {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .menu_navegacion:hover {
+        color: aliceblue;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* TITULOS */
+    #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil H1,
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales h1,
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies h1,
+    #HABILIDADES h1,
+    #PORTAFOLIO>h1,
+    #CONTACTO h1 {
+        font-size: 45px;
+    }
+
+
+    .habilidades_1 h2,
+    .habilidades_2 h2 {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+    /* INCIO */
+    /* #INICIO {
+        background-image: url(../../IMAGENES/IMAGEN_DE_FONDO/photo-1607799279861-4dd421887fb3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+
+    #INICIO {
+        position: relative; /* Necesario para el pseudo-elemento */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        background: #101327;
+    }
+    
+    #INICIO::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../IMAGENES/IMAGEN_DE_FONDO/photo-1607799279861-4dd421887fb3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%; /* Ajusta la opacidad aquí */
+        z-index: 1; /* Asegúrate de que esté detrás del contenido */
+    }
+    
+    #INICIO > * {
+        position: relative; /* Para que el contenido esté por encima */
+        z-index: 2; /* Asegura que el contenido esté por encima del fondo */
+    }
+    
+
+
+
+
+
+    #INICIO main {
+        width: 375px;
+        height: 575px;
+
+        padding: 10px 0;
+    }
+
+    #INICIO main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+
+    /* cont y imagen de perfil */
+    #INICIO main .cont_imagen_perfil {
+        grid-column: 1 / -1;
+        grid-row: 1 / 6;
+        border: 10px solid #93D2F3;
+        border-radius: 50%;
+        margin: 60px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #INICIO main .cont_imagen_perfil img {
+        width: auto;
+        height: 100%;
+    }
+
+
+
+    /* subtitulo de perfil */
+    #INICIO main h1 {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+
+        font-size: 30px;
+    }
+
+    #INICIO main h3 {
+        grid-column: 1 / -1;
+        grid-row: 7 / 8;
+
+    }
+
+    #INICIO main h1 {
+        margin: auto;
+    }
+
+    #INICIO main h3 {
+        margin: 0 auto;
+    }
+
+
+
+
+
+    /* enlaces perfil */
+    #INICIO main ul {
+        grid-column: 1 / -1;
+        grid-row: 8 / -1;
+
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #INICIO main ul li {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #93D2F3;
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #INICIO main ul li i {
+        font-size: 30px;
+        color: #93D2F3;
+    }
+
+    #INICIO main ul li:hover {
+        background-color: #93d1f3b9;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* SOBRE MI */
+
+    #SOBRE_MI {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi {
+        width: 1200px;
+        height: 100%;
+
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil h1 {
+        margin-top: 50px;
+    }
+
+
+
+    /*datos personales*/
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales {
+        grid-column: 1 / 5;
+        grid-row: 2 / -1;
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales ul {
+        width: 100%;
+        margin: 100px 0;
+        font-size: 20px;
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+
+
+    /*Mis Hobbies*/
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies {
+        grid-column: 5 / -1;
+        grid-row: 2 / -1;
+    }
+
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies .hobbies {
+        width: 100%;
+        height: 300px;
+        margin: 100px 0;
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies .hobbies li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* HABILIDADES */
+
+    #HABILIDADES {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+
+
+
+    #HABILIDADES h1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        text-align: center;
+        margin: auto auto 0 auto;
+    }
+
+
+    #HABILIDADES .cont_estadisticas {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+    }
+
+
+
+
+
+
+    /* BARA DE PROGRESO */
+
+    .habilidades_1,
+    .habilidades_2 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin: auto 0;
+    }
+
+
+    .contenedor_barra {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: rgb(17, 17, 17);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .porcentaje {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .habilidad {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .barra_progreso {
+        width: 0%;
+        height: 100%;
+        background-color: aqua;
+        z-index: 0;
+        transition: 1.0s ease;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* PORTAFOLIO */
+
+    #PORTAFOLIO {
+        /* width: 100vw; */
+        height: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    /*titulo portafolio*/
+    #PORTAFOLIO>h1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    #PORTAFOLIO .cont_portafolio {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        grid-gap: 20px;
+    }
+
+
+    .cont_portafolio li {
+        position: relative;
+        aspect-ratio: 1;
+        list-style: none;
+        background-color: #2a2f33;
+        overflow: hidden;
+    }
+
+
+    /*imagen proyecto*/
+    .cont_portafolio li img {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: 0.4s ease;
+    }
+
+    /*texto proyecto*/
+    .cont_portafolio h1 {
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        transition: 0.4s ease;
+    }
+
+
+
+    /*HOVER proyecto aplicados*/
+    .cont_portafolio li:hover h1 {
+        transform: translate(-50%, -50%);
+    }
+
+    .cont_portafolio li:hover img {
+        filter: blur(5px);
+        opacity: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* CONTACTO */
+    #CONTACTO {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 10px;
+        background-image: url(../../IMAGENES/IMAGEN_DE_FONDO/minimalist-neon-blue-and-black-world-map-w1ycvc2injlkae7p.jpg);
+    }
+
+
+    #CONTACTO h1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        margin: auto;
+    }
+
+
+    #CONTACTO form {
+        grid-column: 2 / 3;
+        grid-row: 2 / 8;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px;
+    }
+
+    #CONTACTO form input {
+        height: 60px;
+    }
+
+    #CONTACTO form textarea {
+        height: 40%;
+    }
+
+    #CONTACTO form button {
+        width: 150px;
+        height: 50px;
+        margin: auto;
+    }
+
+
+    #CONTACTO .cont_mapa {
+        grid-column: 3 / -1;
+        grid-row: 2 / 8;
+        margin: 50px;
+
+        display: flex;
+        justify-content: start;
+    }
+
+    #CONTACTO .cont_mapa img {
+        width: auto;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FOOTER */
+    #FOOTER {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #FOOTER>#boton_footer {
+        position: relative;
+        top: -30px;
+        margin: auto;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #FOOTER button i {
+        font-size: 30px;
+    }
+
+
+    #FOOTER ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    #FOOTER ul li {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #93D2F3;
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #FOOTER ul li i {
+        font-size: 30px;
+        color: #93D2F3;
+    }
+
+
+    #FOOTER h1 {
+        margin: auto;
+        font-size: 30px;
+    }
+
+
+    #FOOTER ul li:hover {
+        background-color: #93d1f3b9;
+    }
+
+
+
+
+    #FOOTER #boton_CV {
+        height: 40px;
+        width: 150px;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* MENSAJE CONTACTO */
+    #cont_ventana_contactos {
+        position: fixed;
+        bottom: -20%;
+        left: 50%;
+        width: 300px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+    }
+
+    .ventana_contactos {
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        border-radius: 10px;
+        transform: translateY(0%);
+        transition: 0.2s;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .mensaje_mostrado {
+        transform: translateY(-200%);
+    }
+
+
+}

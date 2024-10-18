@@ -1,0 +1,163 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: #1B1F22;
+    z-index: 3;
+    position: fixed;
+}
+
+
+
+/* COLORES */
+header h1,
+header nav,
+#INICIO main h1,
+#INICIO main h3,
+#SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil H1,
+#SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales h1,
+#SOBRE_MI .cont_externo_sobre_mi .cont_hobbies h1,
+#HABILIDADES h1,
+#PORTAFOLIO h1,
+#CONTACTO h1,
+#FOOTER h1 {
+    color: #93D2F3;
+}
+
+
+.habilidades_1 h2,
+.habilidades_2 h2 {
+    color: #93D2F3;
+}
+
+
+
+
+
+
+
+#INICIO main {
+    background-color: #1B1F22;
+    border-radius: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+/* SOBRE MI */
+
+#SOBRE_MI,
+#HABILIDADES,
+#PORTAFOLIO,
+#CONTACTO,
+#FOOTER {
+    background-color: #1B1F22;
+}
+
+/* color datos personales*/
+#SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales ul li {
+    color: aliceblue;
+}
+
+/* spam */
+#SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales ul span {
+    background-color: #93D2F3;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* texto perfil */
+#SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil p {
+    color: aliceblue;
+}
+
+
+
+
+/*hobbie LI*/
+#SOBRE_MI .cont_externo_sobre_mi .cont_hobbies .hobbies li {
+    background-color: #252a2e;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+/* CONTACTO */
+
+/*inputs*/
+#CONTACTO form input,
+#CONTACTO form textarea {
+    background-color: rgb(34 39 43);
+    color: aliceblue;
+    border: none;
+    padding-left: 20px;
+}
+
+#CONTACTO form button,
+#FOOTER #boton_CV {
+    background-color: #252a2e;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+}
+
+
+#CONTACTO form button:hover,
+#FOOTER #boton_CV:hover {
+    background-color: #383e42;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+button {
+    cursor: pointer;
+}
+
+#FOOTER button i {
+    color: #93D2F3;
+}
+
+
+
+
+
+
+
+
+/* VENTANA CONTACTO */
+#cont_ventana_contactos {
+    z-index: 3;
+}
+
+.ventana_contactos {
+    background-color: #2a2f33;
+    color: aliceblue;
+}
