@@ -22,7 +22,7 @@ header {
 header h1,
 header nav,
 #INICIO main h1,
-#INICIO main h3,
+#INICIO main .titulo_principal,
 #SOBRE_MI .cont_externo_sobre_mi .descripcion_perfil H1,
 #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales h1,
 #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies h1,
@@ -50,7 +50,9 @@ header nav,
     border-radius: 1em;
 }
 
-
+#INICIO main .titulo_principal {
+    text-align: center;
+}
 
 
 

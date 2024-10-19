@@ -143,7 +143,7 @@
         font-size: 30px;
     }
 
-    #INICIO main h3 {
+    #INICIO main .titulo_principal {
         grid-column: 1 / -1;
         grid-row: 7 / 8;
     }
