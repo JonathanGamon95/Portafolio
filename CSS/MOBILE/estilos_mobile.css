@@ -581,7 +581,7 @@
         left: 50%;
         width: 300px;
         height: 100px;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
     }
 
     .ventana_contactos {
