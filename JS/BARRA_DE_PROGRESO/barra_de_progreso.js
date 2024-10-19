@@ -1,6 +1,7 @@
 const PORCENTAJE_HTML = document.getElementById("porsentaje_HTML");
 const PORCENTAJE_CSS = document.getElementById("porsentaje_CSS");
 const PORCENTAJE_JS = document.getElementById("porsentaje_JS");
+const PORCENTAJE_REACT = document.getElementById("porsentaje_REACT");
 
 const PORCENTAJE_DISEÑO = document.getElementById("porsentaje_DISEÑO");
 const PORCENTAJE_CREATIVIDAD = document.getElementById("porsentaje_CREATIVIDAD");
@@ -14,6 +15,8 @@ let VALOR_INICIAL = 0;
 const HTML = 98;
 const JAVASCRIPT = 75;
 const Css = 92;
+const REACT = 30;
+
 const DISEÑO = 95;
 const CREATIVIDAD = 78;
 const TRABAJO_EN_EQUIPO = 85;
@@ -58,6 +61,7 @@ const LLAMANDO_FUNCIONES = () => {
     BARRA_DE_PROGRESO(PORCENTAJE_HTML, HTML);
     BARRA_DE_PROGRESO(PORCENTAJE_CSS, Css);
     BARRA_DE_PROGRESO(PORCENTAJE_JS, JAVASCRIPT);
+    BARRA_DE_PROGRESO(PORCENTAJE_REACT, REACT);
     BARRA_DE_PROGRESO(PORCENTAJE_DISEÑO, DISEÑO);
     BARRA_DE_PROGRESO(PORCENTAJE_CREATIVIDAD, CREATIVIDAD);
     BARRA_DE_PROGRESO(PORCENTAJE_TRABAJO_EN_EQUIPO, TRABAJO_EN_EQUIPO);
