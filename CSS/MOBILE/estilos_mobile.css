@@ -602,3 +602,18 @@
         transform: translateY(-200%);
     }
 }
+
+
+
+
+
+
+
+/* pantalla mas chica */
+@media (max-width: 475.98px)and (orientation:portrait) {
+    main {
+        margin-top: 100px;
+        padding: 0%;
+        margin-top: 100px;
+    }
+}
