@@ -790,4 +790,17 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+    /* menu mobile */
+    .cont_menu_mobile_externo {
+        visibility: hidden;
+    }
 }
