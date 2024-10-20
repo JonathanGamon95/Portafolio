@@ -1,7 +1,7 @@
 const BOTON_DESCARGA_CV = document.getElementById("boton_CV");
 
 const descarga = () => {
-    const filePath = './CV/CV-desarrollo_web.pdf';
+    const filePath = './CV/desarrollo_web.pdf';
     const link = document.createElement('a');
     link.href = filePath;
     link.download = 'archivo.pdf'; // Nombre sugerido para el archivo
