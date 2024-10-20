@@ -1,5 +1,6 @@
 const boton_whatApp = document.querySelectorAll(".whatApp");
 const BOTON_GMAIL = document.querySelectorAll(".correo");
+const BOTON_GITHUB = document.querySelectorAll(".github")
 
 
 const CONT_VENTANA_CONTACTO = document.getElementById("cont_ventana_contactos");
@@ -36,6 +37,18 @@ boton_whatApp.forEach((boton) => {
 
 BOTON_GMAIL.forEach((boton) => {
     const mensaje = "jonathaneg51995@gmail.com";
+
+    boton.addEventListener("click", () => {
+        if (activador === 0) {
+            MOSTRAR_MENSAJE(mensaje);
+        }
+    });
+});
+
+
+
+BOTON_GITHUB.forEach((boton) => {
+    const mensaje = "https://github.com/JonathanGamon95";
 
     boton.addEventListener("click", () => {
         if (activador === 0) {
