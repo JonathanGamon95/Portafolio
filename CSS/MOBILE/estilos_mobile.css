@@ -608,6 +608,7 @@
 
     /* MENU MOBILE */
     .cont_menu_mobile_externo {
+        display: block;
         visibility: hidden;
         position: fixed;
 
