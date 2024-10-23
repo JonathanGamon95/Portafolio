@@ -10,4 +10,4 @@ CONTIENE:
 
 -Mis habilidades  "tecnicas y profecional".
 
--Contacto: N° de telefono / correo / gitHub. (formulario actualemnte solo esta de ejemplo).
+-Contacto: N° de telefono / correo / gitHub. (formulario actualmente solo esta de ejemplo).
