@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
+    <!--libreria scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <title>Jonathan Gamon</title>
 </head>
 
@@ -68,7 +72,7 @@
 
 
     <section id="SOBRE_MI">
-        <div class="cont_externo_sobre_mi">
+        <div class="cont_externo_sobre_mi" data-aos="zoom-in-down" data-aos-delay="600">
             <div class="descripcion_perfil">
                 <h1 id="sobre_mi">Sobre Mi</h1>
                 <p>Hola, Soy Jonathan Gamon, un estudiantes autodidacta enamorado de la programacion, todo lo que
@@ -175,7 +179,7 @@
 
     <section id="PORTAFOLIO">
         <h1 id="portafolio">Mi Portafolio</h1>
-        <ul class="cont_portafolio">
+        <ul class="cont_portafolio" data-aos="zoom-in-down" data-aos-delay="600">
             <li>
                 <a href="https://jonathangamon95.github.io/Calculadora/">
                     <h1>Calculadora</h1>
@@ -339,7 +343,10 @@
 
 
 
-
+    <!--script libreria scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    
     <script src="./JS/BARRA_DE_PROGRESO/barra_de_progreso.js"></script>
     <script src="./JS/DESPLAZAMIENTO_BOTON_SCROLL/desplazamiento_boton_scroll.js"></script>
     <script src="./JS/ANIMACION_NOMBRE_PRINCIPAL/animacion_nombre.js"></script>
