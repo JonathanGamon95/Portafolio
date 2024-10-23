@@ -60,7 +60,7 @@
     #SOBRE_MI .cont_externo_sobre_mi .cont_datos_personales h1,
     #SOBRE_MI .cont_externo_sobre_mi .cont_hobbies h1,
     #HABILIDADES h1,
-    #PORTAFOLIO h1,
+    #PORTAFOLIO > h1,
     #CONTACTO h1 {
         text-align: center;
         font-size: 40px;
@@ -88,7 +88,7 @@
 
 
 
-    /* INCIO */
+    /* INICIO */
     #INICIO {
         width: 100vw;
         height: 100vh;
@@ -424,6 +424,13 @@
         transform: translate(-50%, -0%);
     }
 
+
+    .cont_portafolio li a h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        background-color: #1B1F22;
+    }
 
 
 
