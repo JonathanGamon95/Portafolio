@@ -10,7 +10,7 @@
 
 header {
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background-color: #1B1F22;
     z-index: 3;
     position: fixed;
